@@ -113,7 +113,9 @@ h2 .blast:hover {
     letter-spacing: 1px;
   }
   .wave {
-    right: 15rem;
+    right: 5rem;
+    font-size: 12rem;
+    margin-top: -19rem;
   }
 }
 @media screen and (max-width: 600px) {
