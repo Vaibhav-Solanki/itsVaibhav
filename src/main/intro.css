@@ -10,7 +10,7 @@
   right: 1rem;
   font-size: 10rem;
 }
-h1 {
+.titH1 {
   margin: 5rem;
   font-family: noman;
   font-weight: 400;
@@ -18,8 +18,8 @@ h1 {
   line-height: 5.7rem;
   position: relative;
 }
-h1:before {
-  content: "<h1>";
+.titH1:before {
+  content: "<h1/>";
   font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
@@ -27,7 +27,7 @@ h1:before {
   margin-top: -5rem;
   left: -1.5rem;
 }
-h1:after {
+.titH1:after {
   content: "<h1/>";
   font-family: "La Belle Aurore", cursive;
   color: #515152;
@@ -35,24 +35,6 @@ h1:after {
   position: absolute;
   margin-top: 3.8rem;
   margin-left: 2rem;
-}
-h2:before {
-  content: "<h2>";
-  font-family: "La Belle Aurore", cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  margin-top: -4rem;
-  left: -1rem;
-}
-h2:after {
-  content: "<h2/>";
-  font-family: "La Belle Aurore", cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  left: -1rem;
-  bottom: -5rem;
 }
 .gray-text {
   font-size: 1.6rem;
@@ -67,13 +49,15 @@ h2:after {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-h1 .blast:hover,
+.titH1 .blast:hover,
 h2 .blast:hover {
   color: #08fdd8;
 }
-
+#callBtn {
+  margin: 5rem;
+}
 @media screen and (max-width: 1100px) {
-  h1 {
+  .titH1 {
     font-size: 4.3rem;
     line-height: 4rem;
   }
@@ -86,13 +70,16 @@ h2 .blast:hover {
   }
 }
 @media screen and (max-width: 900px) {
-  h1 {
+  .titH1 {
     font-size: 3.2rem;
     line-height: 3.5rem;
     margin: 3rem;
   }
-  h1:before {
-    content: "<h1>";
+  #callBtn {
+    margin-left: 3rem;
+  }
+  .titH1:before {
+    content: "<h1/>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
     font-size: 1.5rem;
@@ -100,7 +87,7 @@ h2 .blast:hover {
     margin-top: -3rem;
     left: -3.5rem;
   }
-  h1:after {
+  .titH1:after {
     content: "<h1/>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
@@ -119,13 +106,16 @@ h2 .blast:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  h1 {
+  .titH1 {
     margin: 3rem;
     font-size: 2.3rem;
     line-height: 2rem;
   }
-  h1:before {
-    content: "<h1>";
+  #callBtn {
+    margin-left: 3rem;
+  }
+  .titH1:before {
+    content: "<h1/>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
     font-size: 0.8rem;
@@ -133,7 +123,7 @@ h2 .blast:hover {
     margin-top: -2rem;
     left: -1.5rem;
   }
-  h1:after {
+  .titH1:after {
     content: "<h1/>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
@@ -154,12 +144,12 @@ h2 .blast:hover {
   }
 }
 @media screen and (max-width: 380px) {
-  h1 {
+  .titH1 {
     font-size: 1.7rem;
     line-height: 2rem;
   }
-  h1:before {
-    content: "<h1>";
+  .titH1:before {
+    content: "<h1/>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
     font-size: 0.8rem;
@@ -167,7 +157,7 @@ h2 .blast:hover {
     margin-top: -2rem;
     left: -2.5rem;
   }
-  h1:after {
+  .titH1:after {
     content: "<h1/>";
     font-family: "La Belle Aurore", cursive;
     color: #515152;
