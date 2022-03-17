@@ -54,8 +54,8 @@ h2 {
   right: auto;
   z-index: -1;
   transform: translateX(-50%);
-  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-  animation: fillTop 2s forwards 4s ease-in-out;
+  /* -webkit-animation: fillTop 0.5s forwards 0.5s ease-in-out;
+  animation: fillTop 0.5s forwards 0.5s ease-in-out; */
 }
 .timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
   content: "";
@@ -68,8 +68,8 @@ h2 {
   top: 50%;
   left: auto;
   transform: translateY(-50%);
-  -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
-  animation: fillLeft 2s forwards 4s ease-in-out;
+  /* -webkit-animation: fillLeft 0.5s forwards 0.5s ease-in-out;
+  animation: fillLeft 0.5s forwards 0.5s ease-in-out; */
 }
 .timeline__event__title {
   font-size: 1.2rem;
@@ -129,8 +129,8 @@ h2 {
   z-index: -1;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-  animation: fillTop 2s forwards 4s ease-in-out;
+  /* -webkit-animation: fillTop 0.5s forwards 0.5s ease-in-out;
+  animation: fillTop 0.5s forwards 0.5s ease-in-out; */
 }
 .timeline__event__icon:after {
   content: "";
@@ -142,8 +142,8 @@ h2 {
   z-index: -1;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
-  animation: fillLeftOdd 2s forwards 4s ease-in-out;
+  /* -webkit-animation: fillLeftOdd 0.5s forwards 0.5s ease-in-out;
+  animation: fillLeftOdd 0.5s forwards 0.5s ease-in-out; */
 }
 .timeline__event__description {
   flex-basis: 60%;

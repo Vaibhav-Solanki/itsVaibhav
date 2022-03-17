@@ -3,9 +3,12 @@ import RubFont from "../custF/rubFont";
 import hero from "../image/hero.png";
 function TimeLine() {
   return (
-    // <div className="container">
-    <>
-      <h2>MY TIMELINE 💫</h2>
+    <div className="container">
+      {/* <> */}
+      <h2>
+        <RubFont st="MY TIMELINE "></RubFont>
+        {"💫"}
+      </h2>
       <div className="timeline">
         <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
           <div className="timeline__event__icon ">
@@ -63,7 +66,7 @@ function TimeLine() {
         </div>
         <div className="timeline__event animated fadeInUp timeline__event--type1">
           <div className="timeline__event__icon">
-            <i className="lni-cake"></i>
+            <i className="fa-solid fa-cake-candles"></i>
           </div>
           <div className="timeline__event__date">20-09-2000</div>
           <div className="timeline__event__content">
@@ -79,8 +82,8 @@ function TimeLine() {
           </div>
         </div>
       </div>
-    </>
-    // </div>
+      {/* </> */}
+    </div>
   );
 }
 
