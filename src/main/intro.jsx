@@ -8,6 +8,17 @@ function SpanCon({ st }) {
   }
   return st.split("").map((el, key) => {
     if (el == " ") return " ";
+    if (el == "V")
+      return (
+        <span
+          className="blast"
+          onMouseEnter={handleHov}
+          key={key}
+          style={{ color: "#e11414", fontSize: "1.12em" }}
+        >
+          {el}
+        </span>
+      );
     return (
       <span className="blast" onMouseEnter={handleHov} key={key}>
         {el}
