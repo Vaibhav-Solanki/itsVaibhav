@@ -37,6 +37,7 @@ function Intro() {
           <br />
           <SpanCon st="Web Developer"></SpanCon>
         </h1>
+        <span className="wave">👋</span>
       </div>
     </div>
   );
