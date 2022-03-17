@@ -1,5 +1,5 @@
 {
-  "name": "vaibhav-solanki",
+  "name": "itsvaibhav",
   "version": "1.0.0",
   "description": "it's my personal portfolio",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vaibhav-Solanki/Vaibhav-Solanki.git"
+    "url": "git+https://github.com/Vaibhav-Solanki/itsVaibhav.git"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
