@@ -2,3 +2,7 @@
   background: inherit;
   backdrop-filter: blur(10px);
 }
+@font-face {
+  font-family: noman;
+  src: url(./font/noman.otf);
+}
