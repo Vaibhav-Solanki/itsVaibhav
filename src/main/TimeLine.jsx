@@ -9,7 +9,12 @@ function TimeLine() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container" data-aos="fade-up" data-aos-duration="1000">
+    <div
+      className="container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      id="time"
+    >
       {/* <> */}
       <h2>
         <RubFont st="MY TIMELINE "></RubFont>

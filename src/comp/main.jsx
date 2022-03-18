@@ -4,6 +4,7 @@ import { Techstacks } from "../main/Techstacks";
 import TimeLine from "../main/TimeLine";
 import Github from "../main/Github";
 import Project from "../main/project";
+import Contact from "../main/contact";
 function Main() {
   return (
     <div className="container">
@@ -14,6 +15,7 @@ function Main() {
         <Techstacks></Techstacks>
         <Project></Project>
         <Github></Github>
+        <Contact></Contact>
       </main>
     </div>
   );

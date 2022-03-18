@@ -8,10 +8,10 @@ function project() {
   }, []);
   return (
     <div>
-      <section className="light-mod" data-aos="fade-left">
+      <section className="light-mod" data-aos="fade-left" id="project">
         <div className="container py-2">
           <div className="h1 text-center text-dark" id="pageHeaderTitle">
-            My Cards Light
+            My PROJECTS
           </div>
           <article className="postcard light-mod blue" data-aos="fade-right">
             <a className="postcard__img_link" href="#">

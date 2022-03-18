@@ -2,7 +2,7 @@ import "./intro.css";
 import RubFont from "../custF/rubFont";
 function Intro() {
   return (
-    <div className="container intro">
+    <div className="container intro" id="home">
       <div>
         <h1 id="inName" className="titH1">
           <RubFont st="Hi,"></RubFont>

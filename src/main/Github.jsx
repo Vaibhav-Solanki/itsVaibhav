@@ -1,7 +1,7 @@
 import RubFont from "../custF/rubFont";
 export const Github = () => {
   return (
-    <div className="container">
+    <div className="container" id="github">
       <h2 className="section__title different">
         <RubFont st="DAYS I CODE"></RubFont>
         {" 🧑‍💻"}
