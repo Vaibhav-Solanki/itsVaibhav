@@ -3,6 +3,9 @@
 ::before {
   box-sizing: border-box;
 }
+/* .intro {
+  
+} */
 .wave {
   position: absolute;
   z-index: -1;

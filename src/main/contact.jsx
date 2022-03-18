@@ -2,7 +2,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "./contact.css";
-function project() {
+function Contact() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -29,4 +29,4 @@ function project() {
   );
 }
 
-export default project;
+export default Contact;
