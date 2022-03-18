@@ -3,6 +3,7 @@ import { Techstacks } from "../main/Techstacks";
 // import About from "../main/About";
 import TimeLine from "../main/TimeLine";
 import Github from "../main/Github";
+
 function Main() {
   return (
     <div className="container">
