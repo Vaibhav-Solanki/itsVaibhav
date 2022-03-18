@@ -1,16 +1,25 @@
 import "./TimeLine.css";
 import RubFont from "../custF/rubFont";
-import hero from "../image/hero.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function TimeLine() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-up" data-aos-duration="1000">
       {/* <> */}
       <h2>
         <RubFont st="MY TIMELINE "></RubFont>
         {"💫"}
       </h2>
       <div className="timeline">
-        <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+        <div
+          className="timeline__event  timeline__event--type1"
+          data-aos="fade-right"
+        >
           <div className="timeline__event__icon ">
             <i className="fa-solid fa-code"></i>
           </div>
@@ -28,7 +37,10 @@ function TimeLine() {
             </div>
           </div>
         </div>
-        <div className="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+        <div
+          className="timeline__event timeline__event--type2"
+          data-aos="fade-left"
+        >
           <div className="timeline__event__icon">
             <i className="fa-solid fa-graduation-cap"></i>
           </div>
@@ -45,7 +57,10 @@ function TimeLine() {
             </div>
           </div>
         </div>
-        <div className="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+        <div
+          className="timeline__event timeline__event--type3"
+          data-aos="fade-right"
+        >
           <div className="timeline__event__icon">
             <i className="fa-solid fa-school"></i>
           </div>
@@ -64,7 +79,10 @@ function TimeLine() {
             </div>
           </div>
         </div>
-        <div className="timeline__event animated fadeInUp timeline__event--type1">
+        <div
+          className="timeline__event timeline__event--type1"
+          data-aos="fade-left"
+        >
           <div className="timeline__event__icon">
             <i className="fa-solid fa-cake-candles"></i>
           </div>
