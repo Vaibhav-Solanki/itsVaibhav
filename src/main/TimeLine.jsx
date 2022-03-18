@@ -1,4 +1,4 @@
-import "./TimeLine.css";
+import "./TimeLine.scss";
 import RubFont from "../custF/rubFont";
 import Aos from "aos";
 import "aos/dist/aos.css";

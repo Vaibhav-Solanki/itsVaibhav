@@ -3,7 +3,7 @@ import { Techstacks } from "../main/Techstacks";
 // import About from "../main/About";
 import TimeLine from "../main/TimeLine";
 import Github from "../main/Github";
-
+import Project from "../main/project";
 function Main() {
   return (
     <div className="container">
@@ -12,6 +12,7 @@ function Main() {
         {/* <About></About> */}
         <TimeLine></TimeLine>
         <Techstacks></Techstacks>
+        <Project></Project>
         <Github></Github>
       </main>
     </div>
