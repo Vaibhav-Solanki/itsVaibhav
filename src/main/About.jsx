@@ -1,4 +1,5 @@
 import hero from "../image/hero.png";
+import resume from "../image/resume.pdf";
 function About() {
   return (
     <div className="row flex-column-reverse flex-sm-row" id="about">
@@ -17,7 +18,7 @@ function About() {
         </p>
         <p>
           {" "}
-          <a className="btn btn-outline-dark" href="category.html">
+          <a className="btn btn-outline-dark" href={resume} target="_blank">
             My Resume
           </a>
         </p>

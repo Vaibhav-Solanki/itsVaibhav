@@ -12,29 +12,32 @@ function Header() {
       id="ftco-navbar"
     >
       <div className="container">
-        <a className="navbar-brand" href="/#">
+        <a className="navbar-brand" href="#">
           <img src={Logo} alt="Solanki" style={{ width: "5em" }} />
         </a>
         <div className="social-media order-lg-last">
           <p className="mb-0 d-flex">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/vaibhav-s-solanki/"
+              target="_blank"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa fa-facebook">
-                <i className="sr-only">Facebook</i>
+              <span className="fa-brands fa-linkedin-in">
+                <i className="sr-only">linkedin</i>
               </span>
             </a>
             <a
-              href="#"
+              href="https://github.com/Vaibhav-Solanki"
+              target="_blank"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa fa-twitter">
-                <i className="sr-only">Twitter</i>
+              <span className="fa-brands fa-github">
+                <i className="sr-only">github</i>
               </span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/inco.solanki/"
+              target="_blank"
               className="d-flex align-items-center justify-content-center"
             >
               <span className="fa fa-instagram">
@@ -42,11 +45,12 @@ function Header() {
               </span>
             </a>
             <a
-              href="#"
+              href="https://twitter.com/VaibhavSolankie"
+              target="_blank"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa fa-dribbble">
-                <i className="sr-only">Dribbble</i>
+              <span className="fa-brands fa-twitter">
+                <i className="sr-only">twitter</i>
               </span>
             </a>
           </p>
