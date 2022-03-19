@@ -1,12 +1,7 @@
 import hero from "../image/hero.png";
 function About() {
   return (
-    <div
-      className="row flex-column-reverse flex-sm-row"
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
-      id="about"
-    >
+    <div className="row flex-column-reverse flex-sm-row" id="about">
       <div className="py-md-5 col-12 col-sm-8">
         <h5 className="text-uppercase text-danger mb-3 letter-spacing-5">
           {" "}
