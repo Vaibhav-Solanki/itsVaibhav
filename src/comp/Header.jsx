@@ -12,7 +12,7 @@ function Header() {
       id="ftco-navbar"
     >
       <div className="container">
-        <a className="navbar-brand" href="index.html">
+        <a className="navbar-brand" href="/#">
           <img src={Logo} alt="Solanki" style={{ width: "5em" }} />
         </a>
         <div className="social-media order-lg-last">
