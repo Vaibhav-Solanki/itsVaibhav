@@ -1,13 +1,11 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import "./contact.css";
 function Contact() {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
-    <div className="container">
+    <div
+      className="container"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
       <div className="social-btns">
         <a className="btn facebook" href="#">
           <i className="fa fa-facebook"></i>

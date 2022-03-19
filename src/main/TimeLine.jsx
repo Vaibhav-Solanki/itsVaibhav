@@ -1,29 +1,18 @@
 import "./TimeLine.scss";
 import RubFont from "../custF/rubFont";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
 function TimeLine() {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
-    <div
-      className="container"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      id="time"
-    >
+    <div className="container" id="time">
       {/* <> */}
-      <h2>
+      <h2 data-aos="fade-up" data-aos-anchor-placement="top-center">
         <RubFont st="MY TIMELINE "></RubFont>
         {"💫"}
       </h2>
       <div className="timeline">
         <div
           className="timeline__event  timeline__event--type1"
-          data-aos="fade-right"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
         >
           <div className="timeline__event__icon ">
             <i className="fa-solid fa-code"></i>
@@ -44,7 +33,8 @@ function TimeLine() {
         </div>
         <div
           className="timeline__event timeline__event--type2"
-          data-aos="fade-left"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
         >
           <div className="timeline__event__icon">
             <i className="fa-solid fa-graduation-cap"></i>
@@ -64,7 +54,8 @@ function TimeLine() {
         </div>
         <div
           className="timeline__event timeline__event--type3"
-          data-aos="fade-right"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
         >
           <div className="timeline__event__icon">
             <i className="fa-solid fa-school"></i>
@@ -86,7 +77,8 @@ function TimeLine() {
         </div>
         <div
           className="timeline__event timeline__event--type1"
-          data-aos="fade-left"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
         >
           <div className="timeline__event__icon">
             <i className="fa-solid fa-cake-candles"></i>

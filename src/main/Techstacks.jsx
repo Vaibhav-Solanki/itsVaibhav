@@ -19,7 +19,12 @@ import { BsBootstrap } from "react-icons/bs";
 export const Techstacks = () => {
   return (
     <>
-      <div className="section main" data-aos="fade-right" id="stack">
+      <div
+        className="section main"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        id="stack"
+      >
         <h2 className="section__title different">
           <RubFont st="Skills"></RubFont>
           {" 🧑‍💻"}

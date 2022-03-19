@@ -1,19 +1,22 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import "./project.scss";
 function project() {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
     <div>
-      <section className="light-mod" data-aos="fade-left" id="project">
+      <section className="light-mod" id="project">
         <div className="container py-2">
-          <div className="h1 text-center text-dark" id="pageHeaderTitle">
+          <div
+            className="h1 text-center text-dark"
+            id="pageHeaderTitle"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             My PROJECTS
           </div>
-          <article className="postcard light-mod blue" data-aos="fade-right">
+          <article
+            className="postcard light-mod blue"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <a className="postcard__img_link" href="#">
               <img
                 className="postcard__img"
@@ -59,7 +62,11 @@ function project() {
               </ul>
             </div>
           </article>
-          <article className="postcard light-mod red" data-aos="fade-left">
+          <article
+            className="postcard light-mod red"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <a className="postcard__img_link" href="#">
               <img
                 className="postcard__img"
@@ -105,7 +112,11 @@ function project() {
               </ul>
             </div>
           </article>
-          <article className="postcard light-mod green" data-aos="fade-right">
+          <article
+            className="postcard light-mod green"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <a className="postcard__img_link" href="#">
               <img
                 className="postcard__img"
@@ -151,7 +162,11 @@ function project() {
               </ul>
             </div>
           </article>
-          <article className="postcard light-mod yellow" data-aos="fade-left">
+          <article
+            className="postcard light-mod yellow"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <a className="postcard__img_link" href="#">
               <img
                 className="postcard__img"
