@@ -23,7 +23,7 @@ let list = [
 ];
 function TimeCard({ list }) {
   let i = 1;
-  return list.map(({ icon, time, title, detail }) => {
+  return list.map(({ icon, time, title, detail }, key) => {
     if (i > 3) i = 1;
     let cl = `timeline__event  timeline__event--type${i++}`;
     return (
@@ -31,6 +31,7 @@ function TimeCard({ list }) {
         className={cl}
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
+        key={key}
       >
         <div className="timeline__event__icon ">
           <i className={icon}></i>
