@@ -1,14 +1,25 @@
 import "./project.scss";
-import croma from "../image/croma.png";
+import croma from "../image/croma.jpg";
+import plum from "../image/plum.jpg";
 let list = [
   {
     Img: croma,
-    time: " Mon, May 25th 2020",
+    time: " feb 2022",
     title: "croma clone",
     detail:
-      "Croma is an Indian electronics retail chain with an online store as well \nFeatures:\n1. Add to Cart and Edit Cart Items feature\n2. Apply Promo Code feature on Cart page\n3. Multiple delivery options with estimated time\nTech Stack: HTML | CSS | Javascript | React | Node |\nMongoDB",
+      "Croma is an Indian electronics retail chain with an online store as well \nFeatures:\n1. Add to Cart and Edit Cart Items feature\n2. Apply Promo Code feature on Cart page\n3. Multiple delivery options with estimated time \n Tech Stack: HTML | CSS | Javascript | React | Node |\nMongoDB",
     git: "https://github.com/Vaibhav-Solanki/cromaExpress",
     link: "https://cromaexpress.herokuapp.com/",
+    Blog: "#",
+  },
+  {
+    Img: plum,
+    time: " Dec 2021",
+    title: "Plumgoodness",
+    detail:
+      "An e-commerce web application providing a wide range of skincare products.Features:-> Social Sign-in/Sign-up-> Cart and Payment Functionality->Detailed Product pagesTech Stack: HTML | CSS | JavaScript",
+    git: "https://github.com/Abhishekkp42/E-commerce-Plumgoodness",
+    link: "https://plumgoodness-clone-rohit-2021.netlify.app/",
     Blog: "#",
   },
 ];
@@ -28,7 +39,7 @@ function ProjectCard({ list }) {
           <img className="postcard__img" src={Img} alt="Image Title" />
         </a>
         <div className="postcard__text t-dark">
-          <h1 className={`postcard__title ${color[i]}`}>{title}</h1>
+          <h1 className={`postcard__title ${color[i++]}`}>{title}</h1>
           <div className="postcard__subtitle small">
             <time dateTime="2020-05-25 12:00:00">
               <i className="fas fa-calendar-alt mr-2" />
@@ -39,13 +50,13 @@ function ProjectCard({ list }) {
           <div className="postcard__preview-txt">{detail}</div>
           <ul className="postcard__tagbox">
             <li className="tag__item">
-              <i class="fa-brands fa-node-js"></i> nodeJs
+              <i className="fa-brands fa-node-js"></i> nodeJs
             </li>
             <li className="tag__item">
-              <i class="fa-brands fa-js-square"></i> Javascript
+              <i className="fa-brands fa-js-square"></i> Javascript
             </li>
             <li className="tag__item">
-              <i class="fa-solid fa-database"></i> mongoDB
+              <i className="fa-solid fa-database"></i> mongoDB
             </li>
           </ul>
           <div className="btn-group" role="group" aria-label="Basic example">
