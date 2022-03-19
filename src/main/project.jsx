@@ -39,12 +39,13 @@ function ProjectCard({ list }) {
           <div className="postcard__preview-txt">{detail}</div>
           <ul className="postcard__tagbox">
             <li className="tag__item">
-              <i className="fas fa-tag mr-2" />
-              nodeJs
+              <i class="fa-brands fa-node-js"></i> nodeJs
             </li>
             <li className="tag__item">
-              <i className="fas fa-clock mr-2" />
-              Javascript
+              <i class="fa-brands fa-js-square"></i> Javascript
+            </li>
+            <li className="tag__item">
+              <i class="fa-solid fa-database"></i> mongoDB
             </li>
           </ul>
           <div className="btn-group" role="group" aria-label="Basic example">

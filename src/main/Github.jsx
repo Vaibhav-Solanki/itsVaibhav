@@ -15,7 +15,7 @@ export const Github = () => {
         <img
           alt="Vaibhav Solanki's Activity Graph"
           src="https://activity-graph.herokuapp.com/graph?username=Vaibhav-Solanki&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true"
-          style={{ maxWidth: "100%" }}
+          style={{ maxWidth: "100%", filter: "hue-rotate(272deg) invert(1)" }}
         />
       </a>
     </div>

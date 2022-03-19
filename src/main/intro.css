@@ -54,8 +54,11 @@
 }
 .titH1 .blast:hover,
 h2 .blast:hover {
-  color: #08fdd8;
+  color: #51ac6c;
 }
+/* .rubberBand {
+  color: #24b47e;
+} */
 #callBtn {
   margin: 5rem;
 }

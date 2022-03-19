@@ -23,8 +23,8 @@ function Main() {
       <About></About>
       <TimeLine></TimeLine>
       <Techstacks></Techstacks>
-      <Project></Project>
       <Github></Github>
+      <Project></Project>
       <Contact></Contact>
     </Suspense>
   );
