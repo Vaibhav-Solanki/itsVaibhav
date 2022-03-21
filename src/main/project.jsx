@@ -60,13 +60,13 @@ function ProjectCard({ list }) {
             </li>
           </ul>
           <div className="btn-group" role="group" aria-label="Basic example">
-            <button
+            {/* <button
               type="button"
               className="btn btn-outline-secondary"
               onClick={() => window.open(Blog, "_blank")}
             >
               Blog
-            </button>
+            </button> */}
             <button
               type="button"
               className="btn btn-outline-secondary"

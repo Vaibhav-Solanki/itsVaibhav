@@ -308,3 +308,69 @@ p > textarea:focus {
   transform: scale(-1, 1);
   text-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
 }
+.socialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  font-size: 3rem;
+  /* width: 22rem;
+  height: 21rem; */
+}
+.socialGrid > div {
+  background-color: rgb(114, 112, 112);
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#colP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socDiv:hover:nth-child(1) {
+  background-color: #0077b5;
+  color: white;
+}
+.socDiv:hover:nth-child(2) {
+  background-color: #171515;
+  color: white;
+}
+.socDiv:hover:nth-child(3) {
+  background-color: red;
+  color: white;
+}
+.socDiv:hover:nth-child(4) {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+}
+.socDiv:hover:nth-child(5) {
+  background-color: #08a0e9;
+  color: white;
+}
+.socDiv:hover:nth-child(6) {
+  background-color: #2ebd60;
+  color: white;
+}
+.socDiv:hover:nth-child(7) {
+  background-color: black;
+  color: white;
+}
+.socDiv:hover:nth-child(8) {
+  background-color: #128c7e;
+  color: white;
+}
+.socDiv:hover:nth-child(9) {
+  background-color: #25d366;
+  color: white;
+}
