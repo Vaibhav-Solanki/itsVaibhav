@@ -1,4 +1,4 @@
-import hero from "../image/hero.png";
+import hero from "../image/hero.jpg";
 import resume from "../image/resume.pdf";
 function About() {
   return (
@@ -24,7 +24,12 @@ function About() {
         </p>
       </div>
       <div className="col col-sm-4">
-        <img src={hero} alt="Profile" className="w-100 p-2 mb-2" />
+        <img
+          src={hero}
+          alt="Profile"
+          className="w-100 p-2 mb-2"
+          style={{ borderRadius: "5rem" }}
+        />
       </div>
     </div>
   );
