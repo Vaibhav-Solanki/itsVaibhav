@@ -18,7 +18,12 @@ function About() {
         </p>
         <p>
           {" "}
-          <a className="btn btn-outline-dark" href={resume} target="_blank">
+          <a
+            className="btn btn-outline-dark"
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+          >
             My Resume
           </a>
         </p>

@@ -20,6 +20,7 @@ function Footer() {
               className="text-muted"
               href="https://twitter.com/VaibhavSolankie"
               target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +39,7 @@ function Footer() {
               className="text-muted"
               href="https://www.instagram.com/inco.solanki/"
               target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +58,7 @@ function Footer() {
               className="text-muted"
               href="https://www.linkedin.com/in/vaibhav-s-solanki/"
               target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

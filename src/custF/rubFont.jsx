@@ -6,8 +6,8 @@ function RubFont({ st }) {
     }, 1000);
   }
   return st.split("").map((el, key) => {
-    if (el == " ") return " ";
-    if (el == "V")
+    if (el === " ") return " ";
+    if (el === "V")
       return (
         <span
           className="blast"

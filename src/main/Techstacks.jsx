@@ -3,11 +3,9 @@ import RubFont from "../custF/rubFont";
 import "./Techstacks.css";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
-  SiRedux,
   SiHtml5,
   SiMaterialui,
   SiExpress,
-  SiRedis,
   SiTailwindcss,
   SiNetlify,
 } from "react-icons/si";

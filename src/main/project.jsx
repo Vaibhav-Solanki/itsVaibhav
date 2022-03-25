@@ -35,8 +35,13 @@ function ProjectCard({ list }) {
         data-aos-anchor-placement="top-center"
         key={key}
       >
-        <a className="postcard__img_link" href="#">
-          <img className="postcard__img" src={Img} alt="Image Title" />
+        <a
+          className="postcard__img_link"
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="postcard__img" src={Img} alt="Title" />
         </a>
         <div className="postcard__text t-dark">
           <h1 className={`postcard__title ${color[i++]}`}>{title}</h1>

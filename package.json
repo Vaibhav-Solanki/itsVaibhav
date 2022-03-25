@@ -12,10 +12,6 @@
     "url": "git+https://github.com/Vaibhav-Solanki/itsVaibhav.git"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.0",
-    "@fortawesome/fontawesome-svg-core": "^6.1.0",
-    "@fortawesome/free-solid-svg-icons": "^6.1.0",
-    "@fortawesome/react-fontawesome": "^0.1.18",
     "aos": "^2.3.4",
     "bootstrap": "^5.1.3",
     "react": "^17.0.2",

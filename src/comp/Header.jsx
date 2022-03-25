@@ -12,7 +12,7 @@ function Header() {
       id="ftco-navbar"
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src={Logo} alt="Solanki" style={{ width: "5em" }} />
         </a>
         <div className="social-media order-lg-last">
@@ -20,6 +20,7 @@ function Header() {
             <a
               href="https://www.linkedin.com/in/vaibhav-s-solanki/"
               target="_blank"
+              rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
               <span className="fa-brands fa-linkedin-in">
@@ -29,6 +30,7 @@ function Header() {
             <a
               href="https://github.com/Vaibhav-Solanki"
               target="_blank"
+              rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
               <span className="fa-brands fa-github">
@@ -38,6 +40,7 @@ function Header() {
             <a
               href="https://www.instagram.com/inco.solanki/"
               target="_blank"
+              rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
               <span className="fa fa-instagram">
@@ -47,6 +50,7 @@ function Header() {
             <a
               href="https://twitter.com/VaibhavSolankie"
               target="_blank"
+              rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
               <span className="fa-brands fa-twitter">
@@ -64,7 +68,7 @@ function Header() {
         >
           <ul className="navbar-nav ml-auto mr-md-3">
             <li className="nav-item active">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 Home
               </a>
             </li>
