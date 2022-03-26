@@ -2,20 +2,20 @@ import "./TimeLine.scss";
 import RubFont from "../custF/rubFont";
 let list = [
   {
-    icon: "fa-solid fa-code",
+    Icon: "💻",
     time: "Present",
     title: "Full Stack Web development (Masai)",
     detail:
       "Joined the Military style Bootcamp to learn Software Development and Data Structures. Also learned many soft skills in the process.",
   },
   {
-    icon: "fa-solid fa-graduation-cap",
+    Icon: "🎓",
     time: "2021",
     title: "Diploma-CSE (R.G.P.V)",
     detail: "Also learned many soft skills in the process.",
   },
   {
-    icon: "fa-solid fa-school",
+    Icon: "🎒",
     time: "2018",
     title: "Completed Higher Secondary (JNV)",
     detail: "Also learned many soft skills in the process.",
@@ -23,7 +23,7 @@ let list = [
 ];
 function TimeCard({ list }) {
   let i = 1;
-  return list.map(({ icon, time, title, detail }, key) => {
+  return list.map(({ Icon, time, title, detail }, key) => {
     if (i > 3) i = 1;
     let cl = `timeline__event  timeline__event--type${i++}`;
     return (
@@ -33,8 +33,8 @@ function TimeCard({ list }) {
         data-aos-anchor-placement="top-center"
         key={key}
       >
-        <div className="timeline__event__icon ">
-          <i className={icon}></i>
+        <div className="timeline__event__icon " style={{ fontSize: "2rem" }}>
+          {Icon}
         </div>
         <div className="timeline__event__date">{time}</div>
         <div className="timeline__event__content ">

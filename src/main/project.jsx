@@ -1,6 +1,12 @@
 import "./project.scss";
-import croma from "../image/croma.jpg";
-import plum from "../image/plum.jpg";
+import croma from "../image/croma.webp";
+import plum from "../image/plum.webp";
+import {
+  FaRegCalendarAlt,
+  FaNodeJs,
+  FaJsSquare,
+  FaDatabase,
+} from "react-icons/fa";
 let list = [
   {
     Img: croma,
@@ -47,7 +53,7 @@ function ProjectCard({ list }) {
           <h1 className={`postcard__title ${color[i++]}`}>{title}</h1>
           <div className="postcard__subtitle small">
             <time dateTime="2020-05-25 12:00:00">
-              <i className="fas fa-calendar-alt mr-2" />
+              <FaRegCalendarAlt />
               {time}
             </time>
           </div>
@@ -55,13 +61,13 @@ function ProjectCard({ list }) {
           <div className="postcard__preview-txt">{detail}</div>
           <ul className="postcard__tagbox">
             <li className="tag__item">
-              <i className="fa-brands fa-node-js"></i> nodeJs
+              <FaNodeJs /> nodeJs
             </li>
             <li className="tag__item">
-              <i className="fa-brands fa-js-square"></i> Javascript
+              <FaJsSquare /> Javascript
             </li>
             <li className="tag__item">
-              <i className="fa-solid fa-database"></i> mongoDB
+              <FaDatabase /> mongoDB
             </li>
           </ul>
           <div className="btn-group" role="group" aria-label="Basic example">

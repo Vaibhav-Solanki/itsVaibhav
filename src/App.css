@@ -3,37 +3,6 @@ body {
   overflow-x: hidden;
   color: black;
 }
-@font-face {
-  font-family: noman;
-  src: url(./font/noman.otf);
-}
-.main-item {
-  padding: 10px;
-  background-color: #fff;
-  width: 700px;
-}
-
-.background-masker {
-  background-color: #fff;
-  position: absolute;
-}
-
-.btn-divide-left {
-  top: 0;
-  left: 25%;
-  height: 100%;
-  width: 5%;
-}
-
-@keyframes placeHolderShimmer {
-  0% {
-    background-position: -800px 0;
-  }
-  100% {
-    background-position: 800px 0;
-  }
-}
-
 .animated-background {
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -86,4 +55,30 @@ body {
     280px 100%;
 
   background-position: 24px 30px, 66px 30px, 24px 90px, 24px 142px, 0 180px, 0 0;
+}
+.main-item {
+  padding: 10px;
+  background-color: #fff;
+  width: 700px;
+}
+
+.background-masker {
+  background-color: #fff;
+  position: absolute;
+}
+
+.btn-divide-left {
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 5%;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
 }

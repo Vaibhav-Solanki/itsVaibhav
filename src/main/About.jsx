@@ -1,4 +1,4 @@
-import hero from "../image/hero.jpg";
+import hero from "../image/hero.webp";
 import resume from "../image/resume.pdf";
 function About() {
   return (

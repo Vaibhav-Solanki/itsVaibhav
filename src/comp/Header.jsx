@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import Logo from "../logo.png";
 import "./Header.css";
 function Header() {
@@ -23,8 +24,8 @@ function Header() {
               rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa-brands fa-linkedin-in">
-                <i className="sr-only">linkedin</i>
+              <span>
+                <FaLinkedinIn />
               </span>
             </a>
             <a
@@ -33,8 +34,8 @@ function Header() {
               rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa-brands fa-github">
-                <i className="sr-only">github</i>
+              <span>
+                <FaGithub />
               </span>
             </a>
             <a
@@ -43,8 +44,8 @@ function Header() {
               rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa fa-instagram">
-                <i className="sr-only">Instagram</i>
+              <span>
+                <FaInstagram />
               </span>
             </a>
             <a
@@ -53,8 +54,8 @@ function Header() {
               rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
             >
-              <span className="fa-brands fa-twitter">
-                <i className="sr-only">twitter</i>
+              <span>
+                <FaTwitter />
               </span>
             </a>
           </p>
@@ -68,7 +69,7 @@ function Header() {
         >
           <ul className="navbar-nav ml-auto mr-md-3">
             <li className="nav-item active">
-              <a href="/" className="nav-link">
+              <a href="#home" className="nav-link">
                 Home
               </a>
             </li>

@@ -1,5 +1,36 @@
 import "./contact.css";
+import axios from "axios";
+import { useState } from "react";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaInstagram,
+  FaTwitter,
+  FaEnvelope,
+  FaHackerrank,
+  FaDev,
+  FaPhoneAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
 function Contact() {
+  let tmp = {};
+  const [first, setfirst] = useState(tmp);
+  const hanIn = (e) => {
+    let { name, value } = e.target;
+    tmp[name] = value;
+    setfirst(tmp);
+    console.log(first);
+  };
+  const postMes = () => {
+    axios
+      .post("/api", first)
+      .then(cheqSend)
+      .catch((err) => console.log(err));
+  };
+  const cheqSend = () => {
+    if (res.status == 200)
+      window.alert("Message received 🤝 My thanks and appreciation.");
+  };
   return (
     <div className="row" id="contact">
       <h2 style={{ fontSize: "3rem", fontFamily: "Dancing Script" }}>
@@ -16,7 +47,7 @@ function Contact() {
               )
             }
           >
-            <i className="fa-brands fa-linkedin-in"></i>
+            <FaLinkedinIn />
           </div>
           <div
             className="socDiv"
@@ -24,7 +55,7 @@ function Contact() {
               window.open("https://github.com/Vaibhav-Solanki", "_blank")
             }
           >
-            <i className="fa-brands fa-github"></i>
+            <FaGithub />
           </div>
           <div
             className="socDiv"
@@ -32,7 +63,7 @@ function Contact() {
               window.open("mailto:vaibhavsolankie@gmail.com", "_blank")
             }
           >
-            <i className="fa-solid fa-envelope"></i>
+            <FaEnvelope />
           </div>
           <div
             className="socDiv"
@@ -40,7 +71,7 @@ function Contact() {
               window.open("https://www.instagram.com/inco.solanki/", "_blank")
             }
           >
-            <i className="fa-brands fa-instagram"></i>
+            <FaInstagram />
           </div>
           <div
             className="socDiv"
@@ -48,7 +79,7 @@ function Contact() {
               window.open("https://twitter.com/VaibhavSolankies", "_blank")
             }
           >
-            <i className="fa-brands fa-twitter"></i>
+            <FaTwitter />
           </div>
           <div
             className="socDiv"
@@ -56,25 +87,25 @@ function Contact() {
               window.open("https://www.hackerrank.com/vaibhavsolanki", "_blank")
             }
           >
-            <i className="fa-brands fa-hackerrank"></i>
+            <FaHackerrank />
           </div>
           <div
             className="socDiv"
             onClick={() => window.open("https://dev.to/inco", "_blank")}
           >
-            <i className="fa-brands fa-dev"></i>
+            <FaDev />
           </div>
           <div
             className="socDiv"
             onClick={() => window.open("tel:+917000392596", "_blank")}
           >
-            <i className="fa-solid fa-phone"></i>
+            <FaPhoneAlt />
           </div>
           <div
             className="socDiv"
             onClick={() => window.open("https://wa.me/7000392596", "_blank")}
           >
-            <i className="fa-brands fa-whatsapp"></i>
+            <FaWhatsapp />
           </div>
         </div>
       </div>
@@ -83,18 +114,35 @@ function Contact() {
           <div className="side">
             <h1>Contact Me</h1>
             <p>
-              <textarea placeholder="Your message" defaultValue={""} />
+              <textarea
+                placeholder="Your message"
+                defaultValue={""}
+                name="message"
+                onChange={hanIn}
+              />
             </p>
           </div>
           <div className="side">
             <p>
-              <input type="text" placeholder="Your name" />
+              <input
+                type="text"
+                placeholder="Your name"
+                name="name"
+                onChange={hanIn}
+              />
             </p>
             <p>
-              <input type="email" placeholder="Your email" />
+              <input
+                type="email"
+                placeholder="Your email"
+                name="email"
+                onChange={hanIn}
+              />
             </p>
             <p>
-              <button id="sendLetter">Send</button>
+              <button id="sendLetter" onClick={postMes}>
+                Send
+              </button>
             </p>
           </div>
         </article>
