@@ -13,6 +13,12 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 function Contact() {
+  function handleHov(e) {
+    e.target.className = `socDiv animated swing ${e.target.id}`;
+    setTimeout(() => {
+      e.target.className = "socDiv";
+    }, 1000);
+  }
   let tmp = {};
   const [first, setfirst] = useState(tmp);
   const hanIn = (e) => {
@@ -33,13 +39,15 @@ function Contact() {
   };
   return (
     <div className="row" id="contact">
-      <h2 style={{ fontSize: "3rem", fontFamily: "Dancing Script" }}>
+      <h2 style={{ fontSize: "3rem", fontFamily: "winMoji" }}>
         Get in touch 🤝
       </h2>
       <div className="col" id="colP">
         <div className="socialGrid">
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="linkedin"
             onClick={() =>
               window.open(
                 "https://www.linkedin.com/in/vaibhav-s-solanki/",
@@ -51,6 +59,8 @@ function Contact() {
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="github"
             onClick={() =>
               window.open("https://github.com/Vaibhav-Solanki", "_blank")
             }
@@ -59,6 +69,8 @@ function Contact() {
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="mail"
             onClick={() =>
               window.open("mailto:vaibhavsolankie@gmail.com", "_blank")
             }
@@ -67,6 +79,8 @@ function Contact() {
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="insta"
             onClick={() =>
               window.open("https://www.instagram.com/inco.solanki/", "_blank")
             }
@@ -75,6 +89,8 @@ function Contact() {
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="twitter"
             onClick={() =>
               window.open("https://twitter.com/VaibhavSolankies", "_blank")
             }
@@ -83,6 +99,8 @@ function Contact() {
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="hrank"
             onClick={() =>
               window.open("https://www.hackerrank.com/vaibhavsolanki", "_blank")
             }
@@ -91,18 +109,24 @@ function Contact() {
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="fadev"
             onClick={() => window.open("https://dev.to/inco", "_blank")}
           >
             <FaDev />
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="phone"
             onClick={() => window.open("tel:+917000392596", "_blank")}
           >
             <FaPhoneAlt />
           </div>
           <div
             className="socDiv"
+            onMouseEnter={handleHov}
+            id="whatsapp"
             onClick={() => window.open("https://wa.me/7000392596", "_blank")}
           >
             <FaWhatsapp />

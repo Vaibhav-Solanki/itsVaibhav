@@ -1,5 +1,4 @@
 import hero from "../image/hero.webp";
-import resume from "../image/resume.pdf";
 function About() {
   return (
     <div className="row flex-column-reverse flex-sm-row" id="about">
@@ -20,7 +19,7 @@ function About() {
           {" "}
           <a
             className="btn btn-outline-dark"
-            href={resume}
+            href="https://drive.google.com/file/d/1-ubvRj-uO-5hVvaoHnOwFr1vpD7bPphi/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

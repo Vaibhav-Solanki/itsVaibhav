@@ -17,7 +17,7 @@ p {
 }
 .side h1 {
   font-size: 2rem;
-  font-family: "Baloo 2";
+  font-family: "winMoji";
 }
 small {
   display: block;
@@ -330,19 +330,19 @@ p > textarea:focus {
   justify-content: center;
   align-items: center;
 }
-.socDiv:hover:nth-child(1) {
-  background-color: #0077b5;
+.linkedin {
+  background-color: #0077b5 !important;
   color: white;
 }
-.socDiv:hover:nth-child(2) {
-  background-color: #171515;
+.github {
+  background-color: #171515 !important;
   color: white;
 }
-.socDiv:hover:nth-child(3) {
-  background-color: red;
+.mail {
+  background-color: red !important;
   color: white;
 }
-.socDiv:hover:nth-child(4) {
+.insta {
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -350,26 +350,26 @@ p > textarea:focus {
     #fd5949 45%,
     #d6249f 60%,
     #285aeb 90%
-  );
+  ) !important;
   color: white;
 }
-.socDiv:hover:nth-child(5) {
-  background-color: #08a0e9;
+.twitter {
+  background-color: #08a0e9 !important;
   color: white;
 }
-.socDiv:hover:nth-child(6) {
-  background-color: #2ebd60;
+.hrank {
+  background-color: #2ebd60 !important;
   color: white;
 }
-.socDiv:hover:nth-child(7) {
-  background-color: black;
+.fadev {
+  background-color: black !important;
   color: white;
 }
-.socDiv:hover:nth-child(8) {
-  background-color: #128c7e;
+.phone {
+  background-color: #128c7e !important;
   color: white;
 }
-.socDiv:hover:nth-child(9) {
-  background-color: #25d366;
+.whatsapp {
+  background-color: #25d366 !important;
   color: white;
 }

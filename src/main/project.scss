@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 // $main-green: #79dd09 !default;
 // $main-green-rgb-015: rgba(121, 221, 9, 0.1) !default;
 $main-green: #5e0e8b !default;
@@ -25,9 +24,9 @@ $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 //   background: #110f16;
 // }
 
-.light-mod {
-  background: #f3f5f7;
-}
+// .light-mod {
+//   background: #f3f5f7;
+// }
 
 // a,
 // a:hover {
@@ -36,7 +35,7 @@ $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 // }
 
 article {
-  font-family: "Baloo 2", cursive;
+  font-family: "system-ui", cursive;
   font-size: 16px;
   color: #ffffff;
   text-rendering: optimizeLegibility;

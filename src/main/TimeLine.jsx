@@ -33,7 +33,10 @@ function TimeCard({ list }) {
         data-aos-anchor-placement="top-center"
         key={key}
       >
-        <div className="timeline__event__icon " style={{ fontSize: "2rem" }}>
+        <div
+          className="timeline__event__icon "
+          style={{ fontSize: "2rem", fontFamily: "winMoji" }}
+        >
           {Icon}
         </div>
         <div className="timeline__event__date">{time}</div>
