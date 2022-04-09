@@ -7,7 +7,7 @@ function Intro() {
         <h1 id="inName" className="titH1">
           <RubFont st="Hi,"></RubFont>
           <br />
-          <RubFont st="I'm Vaibhav"></RubFont>
+          <RubFont st="I’m Vaibhav"></RubFont>
           <br />
           <RubFont st="Web Developer"></RubFont>
         </h1>

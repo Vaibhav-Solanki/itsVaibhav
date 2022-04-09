@@ -6,6 +6,11 @@
 /* .intro {
   
 } */
+@font-face {
+  font-family: bigF;
+  src: url(../font/BIGF.otf);
+}
+
 .wave {
   position: absolute;
   z-index: -1;
@@ -15,7 +20,7 @@
 }
 .titH1 {
   margin: 5rem;
-  font-family: monospace;
+  font-family: bigF;
   font-weight: 400;
   font-size: 6.3rem;
   line-height: 5.7rem;
