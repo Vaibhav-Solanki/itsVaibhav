@@ -22,17 +22,19 @@ function About() {
             href="https://drive.google.com/file/d/1-ubvRj-uO-5hVvaoHnOwFr1vpD7bPphi/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
+            width="400px"
           >
             My Resume
           </a>
         </p>
       </div>
-      <div className="col col-sm-4">
+      <div className="col col-sm-4 d-flex align-items-center">
         <img
           src={hero}
           alt="Profile"
           className="w-100 p-2 mb-2"
-          style={{ borderRadius: "5rem" }}
+          width="300px"
+          style={{ borderRadius: "20px" }}
         />
       </div>
     </div>
