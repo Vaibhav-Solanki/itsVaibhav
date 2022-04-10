@@ -1,1 +1,17 @@
-
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+#root {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+body {
+  color: black;
+  background: white !important;
+}
+@font-face {
+  font-family: bigF;
+  src: url(./font/BIGF.otf);
+}

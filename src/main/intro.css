@@ -1,16 +1,3 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-/* .intro {
-  
-} */
-@font-face {
-  font-family: bigF;
-  src: url(../font/BIGF.otf);
-}
-
 .wave {
   position: absolute;
   z-index: -1;

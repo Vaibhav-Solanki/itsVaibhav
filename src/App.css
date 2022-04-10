@@ -1,10 +1,4 @@
-body {
-  width: 100vw;
-  overflow-x: hidden;
-  color: black;
-  background: white !important;
-}
-.animated-background {
+/* .animated-background {
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -82,7 +76,7 @@ body {
   100% {
     background-position: 800px 0;
   }
-}
+} */
 
 /* @font-face {
   font-family: winMoji;

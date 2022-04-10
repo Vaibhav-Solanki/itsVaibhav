@@ -1,15 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-/* .bodyL {
-  margin: 0;
-  padding: 0;
-  background-color: #c8e7d8;
-  color: #4e5e72;
-  text-align: center;
-  font-family: monospace;
-  overflow: hidden;
-} */
 .side h1,
 p {
   margin: 0;
@@ -17,7 +5,7 @@ p {
 }
 .side h1 {
   font-size: 2rem;
-  font-family: "winMoji";
+  /* font-family: "winMoji"; */
 }
 small {
   display: block;
@@ -161,30 +149,8 @@ p > textarea:focus {
   transform: translateY(9rem);
   z-index: -9999;
 }
-.sent .letter {
-  -webkit-animation: scaleLetter 1s forwards ease-in
-    /*,
-               pushLetter 0.5s 1.33s forwards ease-out*/;
-  animation: scaleLetter 1s forwards ease-in
-    /*,
-               pushLetter 0.5s 1.33s forwards ease-out*/;
-}
-.sent .side:nth-of-type(1) {
-  transform-origin: 0 100%;
-  -webkit-animation: closeLetter 0.66s forwards ease-in;
-  animation: closeLetter 0.66s forwards ease-in;
-}
-.sent .side:nth-of-type(1) h1,
-.sent .side:nth-of-type(1) textarea {
-  -webkit-animation: fadeOutText 0.66s forwards linear;
-  animation: fadeOutText 0.66s forwards linear;
-}
 .sent button {
   background-color: rgba(78, 94, 114, 0.2);
-}
-.sent .envelope {
-  -webkit-animation: fadeInEnvelope 0.5s 1.33s forwards ease-out;
-  animation: fadeInEnvelope 0.5s 1.33s forwards ease-out;
 }
 .sent .result-message {
   opacity: 1;
@@ -199,109 +165,6 @@ p > textarea:focus {
   right: 0; */
   margin: 1rem auto;
 }
-@-webkit-keyframes closeLetter {
-  50% {
-    transform: rotateX(-90deg);
-  }
-  100% {
-    transform: rotateX(-180deg);
-  }
-}
-@keyframes closeLetter {
-  50% {
-    transform: rotateX(-90deg);
-  }
-  100% {
-    transform: rotateX(-180deg);
-  }
-}
-@-webkit-keyframes fadeOutText {
-  49% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOutText {
-  49% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadeInEnvelope {
-  0% {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
-  /*90% {opacity: 1; transform: translateY(4rem);}*/
-  100% {
-    opacity: 1;
-    transform: translateY(4.5rem);
-  }
-}
-@keyframes fadeInEnvelope {
-  0% {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
-  /*90% {opacity: 1; transform: translateY(4rem);}*/
-  100% {
-    opacity: 1;
-    transform: translateY(4.5rem);
-  }
-}
-@-webkit-keyframes scaleLetter {
-  66% {
-    transform: translateY(-8rem) scale(0.5, 0.5);
-  }
-  75% {
-    transform: translateY(-8rem) scale(0.5, 0.5);
-  }
-  90% {
-    transform: translateY(-8rem) scale(0.3, 0.5);
-  }
-  97% {
-    transform: translateY(-8rem) scale(0.33, 0.5);
-  }
-  100% {
-    transform: translateY(-8rem) scale(0.3, 0.5);
-  }
-}
-@keyframes scaleLetter {
-  66% {
-    transform: translateY(-8rem) scale(0.5, 0.5);
-  }
-  75% {
-    transform: translateY(-8rem) scale(0.5, 0.5);
-  }
-  90% {
-    transform: translateY(-8rem) scale(0.3, 0.5);
-  }
-  97% {
-    transform: translateY(-8rem) scale(0.33, 0.5);
-  }
-  100% {
-    transform: translateY(-8rem) scale(0.3, 0.5);
-  }
-}
-
-/*
-@keyframes pushLetter {
-  0% {transform: translateY(-8rem) scale(0.3, 0.5);}
-  50% {transform: translateY(-8rem) scale(0.3, 0.5);}
-  90% {transform: translateY(-8.5rem) scale(0.3, 0.5);}
-  100% {transform: translateY(-8rem) scale(0.3, 0.5);}
-}
-*/
 .aLink:hover .spanL {
   transition: transform 0s linear 0.1s, text-shadow 0s linear 0.1s;
   transform: scale(-1, 1);
