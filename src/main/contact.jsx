@@ -28,16 +28,11 @@ function Contact() {
   };
   const postMes = async () => {
     try {
-      const response = await fetch("/api", {
+      const response = await fetch("https://backform.herokuapp.com/", {
         method: "POST",
-        mode: "cors",
-        cache: "no-cache",
-        credentials: "same-origin",
         headers: {
           "Content-Type": "application/json",
         },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
         body: JSON.stringify(first),
       });
       const res = await response.json();
