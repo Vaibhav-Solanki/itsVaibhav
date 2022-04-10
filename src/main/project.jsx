@@ -1,6 +1,4 @@
 import "./project.scss";
-import croma from "../image/croma.webp";
-import plum from "../image/plum.webp";
 import {
   FaRegCalendarAlt,
   FaNodeJs,
@@ -9,7 +7,7 @@ import {
 } from "react-icons/fa";
 let list = [
   {
-    Img: croma,
+    Img: "https://ik.imagekit.io/itsVaibhav/croma",
     time: " feb 2022",
     title: "croma clone",
     detail:
@@ -19,7 +17,7 @@ let list = [
     Blog: "#",
   },
   {
-    Img: plum,
+    Img: "https://ik.imagekit.io/itsVaibhav/plum",
     time: " Dec 2021",
     title: "Plumgoodness",
     detail:

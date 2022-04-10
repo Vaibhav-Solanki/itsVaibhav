@@ -1,4 +1,3 @@
-import hero from "../image/hero.webp";
 function About() {
   return (
     <div className="row flex-column-reverse flex-sm-row" id="about">
@@ -30,7 +29,7 @@ function About() {
       </div>
       <div className="col col-sm-4 d-flex align-items-center">
         <img
-          src={hero}
+          src="https://ik.imagekit.io/itsVaibhav/hero"
           alt="Profile"
           className="w-100 p-2 mb-2"
           width="300px"
