@@ -1,57 +1,91 @@
-.main {
-  margin-top: 4em;
+.stackGrid {
+  max-width: 685px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  font-size: 3rem;
+  justify-items: center;
 }
-.techsection {
-  width: 100%;
-  text-align: center;
-  background-color: var(--clr-bg);
-  height: 50vh;
-  /* max-height: 400px; */
-}
-
-.techsection > div {
-  width: 11%;
-  height: 16vh;
-  max-height: 140px;
-  box-shadow: var(--shadow);
-  z-index: 1;
-  border-radius: 20px;
-  margin: 2.5%;
-  float: left;
+.stackGrid > div {
+  /* background-color: rgb(114, 112, 112); */
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  transition: all 0.5s ease 0s;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  color: rgb(114, 112, 112);
 }
-.techsection > div:hover {
-  background-color: var(--clr-bg);
-  overflow: hidden;
-  transform: scale(1.08);
-  box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border: 1px solid var(--clr-primary);
+.skillDiv > p {
+  font-size: 16px;
+  margin: 0px;
+  text-align: center;
+}
+.SiJavascript {
+  background-color: #e8d44d !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiNodedotjs {
+  background-color: #319431 !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiCss3 {
+  background-color: #3492cb !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiBootstrap {
+  background-color: #7a12ef !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiHtml {
+  background-color: #f25320 !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiExpress {
+  background-color: #f25320 !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiPaytm {
+  background-color: #02b0e3 !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.SiAmazonaws {
+  background-color: #ea901d !important;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 
-.techsection > div > svg {
-  /* height: 50%;
-  width: 50%; */
-  font-size: 8vh;
-  color: var(--clr-primary);
-}
-.techsection > div > h5 {
-  position: relative;
-  top: 8px;
-}
-
-@media (max-width: 600px) {
-  .techsection {
-    height: 120vh;
+@media screen and (max-width: 768px) {
+  .stackGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 450px;
   }
-  .techsection > div {
-    width: 40%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-    height: 18vh;
+}
+@media screen and (max-width: 576px) {
+  .stackGrid {
+    max-width: 340px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }

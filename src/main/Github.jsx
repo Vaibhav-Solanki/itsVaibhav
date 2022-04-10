@@ -7,10 +7,7 @@ export const Github = () => {
       data-aos="fade-up"
       data-aos-anchor-placement="top-center"
     >
-      <h2 className="section__title different">
-        <RubFont st="DAYS I CODE"></RubFont>
-        {" 🧑‍💻"}
-      </h2>
+      <h2 className="titleH2Tag">DAYS I CODE 🧑‍💻</h2>
       <a href="https://github.com/Vaibhav-Solanki/">
         <img
           alt="Vaibhav Solanki's Activity Graph"

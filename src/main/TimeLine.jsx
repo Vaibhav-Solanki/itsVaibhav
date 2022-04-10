@@ -54,10 +54,8 @@ function TimeLine() {
   return (
     <div className="container" id="time">
       {/* <> */}
-      <h2 data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <RubFont st="MY TIMELINE "></RubFont>
-        {"💫"}
-      </h2>
+      <h2 className="titleH2Tag">MY TIMELINE ⏰</h2>
+
       <div className="timeline">
         <TimeCard list={list}></TimeCard>
       </div>

@@ -101,14 +101,7 @@ function project() {
     <div>
       <section className="light-mod" id="project">
         <div className="container py-2">
-          <div
-            className="h1 text-center text-dark"
-            id="pageHeaderTitle"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-          >
-            My PROJECTS
-          </div>
+          <h2 className="titleH2Tag"> My PROJECTS 🛠️</h2>
           <ProjectCard list={list}></ProjectCard>
         </div>
       </section>

@@ -11,6 +11,11 @@ body {
   color: black;
   background: white !important;
 }
+.titleH2Tag {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
 @font-face {
   font-family: bigF;
   src: url(./font/BIGF.otf);

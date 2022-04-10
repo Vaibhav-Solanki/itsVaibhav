@@ -177,16 +177,20 @@ p > textarea:focus {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   font-size: 3rem;
+  justify-items: center;
   /* width: 22rem;
   height: 21rem; */
 }
 .socialGrid > div {
-  background-color: rgb(114, 112, 112);
+  /* background-color: rgb(114, 112, 112); */
   padding: 2rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  color: rgb(114, 112, 112);
 }
 #colP {
   display: flex;
@@ -195,15 +199,21 @@ p > textarea:focus {
 }
 .linkedin {
   background-color: #0077b5 !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .github {
   background-color: #171515 !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .mail {
   background-color: red !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .insta {
   background: radial-gradient(
@@ -214,25 +224,37 @@ p > textarea:focus {
     #d6249f 60%,
     #285aeb 90%
   ) !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .twitter {
   background-color: #08a0e9 !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .hrank {
   background-color: #2ebd60 !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .fadev {
   background-color: black !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .phone {
   background-color: #128c7e !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 .whatsapp {
   background-color: #25d366 !important;
-  color: white;
+  color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }

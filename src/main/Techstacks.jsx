@@ -1,82 +1,143 @@
 import React from "react";
 import RubFont from "../custF/rubFont";
 import "./Techstacks.css";
-import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
-  SiHtml5,
-  SiMaterialui,
+  SiNodedotjs,
+  SiReact,
+  SiAmazonaws,
+  SiBootstrap,
+  SiMongodb,
   SiExpress,
-  SiTailwindcss,
-  SiNetlify,
+  SiRedux,
+  SiPaytm,
+  SiJavascript,
+  SiGithub,
+  SiCss3,
+  SiHtml5,
 } from "react-icons/si";
-import { DiCss3, DiMongodb } from "react-icons/di";
-import { SiJavascript } from "react-icons/si";
-import { VscGithub } from "react-icons/vsc";
-import { BsBootstrap } from "react-icons/bs";
 
 export const Techstacks = () => {
+  function handleHov(e) {
+    e.target.className = `skillDiv animated swing ${e.target.id}`;
+  }
+  function handleExit(e) {
+    setTimeout(() => {
+      e.target.className = "skillDiv";
+    }, 500);
+  }
   return (
     <>
-      <div
-        className="section main"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        id="stack"
-      >
-        <h2 className="section__title different">
-          <RubFont st="Skills"></RubFont>
-          {" 🧑‍💻"}
-        </h2>
-        <div className="techsection">
-          <div>
+      <div className="d-flex align-items-center flex-column">
+        <h2 className="titleH2Tag">Skills 🏅</h2>
+        <div className="stackGrid">
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiJavascript"
+          >
             <SiJavascript />
-            <h5>Javascript</h5>
+            <p>JavaScript</p>
           </div>
-          <div>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="twitter"
+          >
+            <SiReact />
+            <p>React</p>
+          </div>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="github"
+          >
+            <SiGithub />
+            <p>Github</p>
+          </div>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiNodedotjs"
+          >
+            <SiNodedotjs />
+            <p>Nodejs</p>
+          </div>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiCss3"
+          >
+            <SiCss3 />
+            <p>CSS</p>
+          </div>
+
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiBootstrap"
+          >
+            <SiBootstrap />
+            <p>Bootstrap</p>
+          </div>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiHtml"
+          >
             <SiHtml5 />
-            <h5>HTML</h5>
+            <p>HTML</p>
           </div>
-          <div>
-            <DiCss3 />
-            <h5>CSS</h5>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiBootstrap"
+          >
+            <SiRedux />
+            <p>Redux</p>
           </div>
-          <div>
-            <FaReact />
-            <h5>React</h5>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="whatsapp"
+          >
+            <SiMongodb />
+            <p>Mongodb</p>
           </div>
-          <div>
-            <FaNodeJs />
-            <h5>Nodejs</h5>
-          </div>
-          <div>
-            <DiMongodb />
-            <h5>MongoDb</h5>
-          </div>
-
-          <div>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiExpress"
+          >
             <SiExpress />
-            <h5>Express</h5>
+            <p>ExpressJs</p>
           </div>
-
-          <div>
-            <SiMaterialui />
-            <h5>Material Ui</h5>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiPaytm"
+          >
+            <SiPaytm />
+            <p>Gateway</p>
           </div>
-          <div>
-            <BsBootstrap />
-            <h5>Bootstrap</h5>
-          </div>
-          <div>
-            <SiTailwindcss />
-            <h5>Tailwind CSS</h5>
-          </div>
-          <div>
-            <SiNetlify />
-            <h5>Netlify</h5>
-          </div>
-          <div>
-            <VscGithub />
-            <h5>Github</h5>
+          <div
+            className="skillDiv"
+            onMouseEnter={handleHov}
+            onMouseLeave={handleExit}
+            id="SiAmazonaws"
+          >
+            <SiAmazonaws />
+            <p>AWS</p>
           </div>
         </div>
       </div>
