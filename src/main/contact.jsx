@@ -1,5 +1,4 @@
 import "./contact.css";
-import axios from "axios";
 import { useState } from "react";
 import {
   FaLinkedinIn,
@@ -27,15 +26,26 @@ function Contact() {
     setfirst(tmp);
     console.log(first);
   };
-  const postMes = () => {
-    axios
-      .post("/api", first)
-      .then(cheqSend)
-      .catch((err) => console.log(err));
-  };
-  const cheqSend = () => {
-    if (res.status == 200)
-      window.alert("Message received 🤝 My thanks and appreciation.");
+  const postMes = async () => {
+    try {
+      const response = await fetch("/api", {
+        method: "POST",
+        mode: "cors",
+        cache: "no-cache",
+        credentials: "same-origin",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        redirect: "follow",
+        referrerPolicy: "no-referrer",
+        body: JSON.stringify(first),
+      });
+      const res = await response.json();
+      if (res.status == 200)
+        window.alert("Message received 🤝 My thanks and appreciation.");
+    } catch (error) {
+      console.log({ error: error });
+    }
   };
   return (
     <div className="row" id="contact">
