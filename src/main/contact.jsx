@@ -41,8 +41,8 @@ function Contact() {
         body: JSON.stringify(first),
       });
       const res = await response.json();
-      if (res.status == 200)
-        window.alert("Message received 🤝 My thanks and appreciation.");
+      if (res.status == 200 || res.status == 400) window.alert(res.message);
+      else console.log(res.message);
     } catch (error) {
       console.log({ error: error });
     }
