@@ -27,7 +27,7 @@ export const Techstacks = () => {
   }
   return (
     <>
-      <div className="d-flex align-items-center flex-column">
+      <div className="d-flex align-items-center flex-column" id="stack">
         <h2 className="titleH2Tag">Skills 🏅</h2>
         <div className="stackGrid">
           <div
