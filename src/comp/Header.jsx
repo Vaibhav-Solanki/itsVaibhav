@@ -14,7 +14,7 @@ function Header() {
     >
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src={Logo} alt="Solanki" style={{ width: "5em" }} />
+          <img src={Logo} alt="Solanki" width="100px" />
         </a>
         <div className="social-media order-lg-last">
           <p className="mb-0 d-flex">

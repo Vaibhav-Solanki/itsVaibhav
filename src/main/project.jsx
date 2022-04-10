@@ -47,7 +47,7 @@ function ProjectCard({ list }) {
           target="_blank"
           rel="noreferrer"
         >
-          <img className="postcard__img" src={Img} alt="Title" />
+          <img className="postcard__img" src={Img} alt="Title" width="200px" />
         </a>
         <div className="postcard__text t-dark">
           <h1 className={`postcard__title ${color[i++]}`}>{title}</h1>
