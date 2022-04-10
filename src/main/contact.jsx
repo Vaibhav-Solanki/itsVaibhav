@@ -36,8 +36,8 @@ function Contact() {
         body: JSON.stringify(first),
       });
       const res = await response.json();
-      if (res.status == 200 || res.status == 400) window.alert(res.message);
-      else console.log(res.message);
+      if (response.status == 200) window.alert(res.message);
+      else window.alert("please corect your message");
     } catch (error) {
       console.log({ error: error });
     }
