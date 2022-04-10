@@ -14,9 +14,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main className="container">
-        <Main></Main>
-      </main>
+
+      <Main></Main>
+
       <Footer></Footer>
     </>
   );
