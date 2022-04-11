@@ -11,7 +11,7 @@ import Intro from "../main/intro";
 import About from "../main/About";
 import TimeLine from "../main/TimeLine";
 import Techstacks from "../main/Techstacks";
-import Project from "../main/project";
+// import Project from "../main/project";
 import Github from "../main/Github";
 import Contact from "../main/contact";
 // const renderLoader = () => (
@@ -33,7 +33,7 @@ function Main() {
       <TimeLine></TimeLine>
       <Techstacks></Techstacks>
       <Github></Github>
-      <Project></Project>
+      {/* <Project></Project> */}
       <Contact></Contact>
     </main>
     // </Suspense>
