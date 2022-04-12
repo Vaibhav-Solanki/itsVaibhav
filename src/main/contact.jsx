@@ -184,6 +184,8 @@ function Contact() {
             </p>
           </div>
         </article>
+        <div className="envelope front" />
+        <div className="envelope back" />
       </div>
     </div>
   );

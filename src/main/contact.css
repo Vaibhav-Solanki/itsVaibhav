@@ -68,29 +68,107 @@ p > textarea:focus {
   background-color: white;
 }
 .letter {
-  max-width: 360px;
   /* width: 30rem; */
   margin: auto;
   perspective: 60rem;
-  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
-    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   border-radius: 10px;
 }
 .side {
   height: 12rem;
   background-color: #fcfcf8;
+  outline: 1px solid transparent;
 }
 .side:nth-of-type(1) {
   padding: 2rem 2rem 0;
   border-radius: 1rem 1rem 0 0;
+  box-shadow: inset 0 0.75rem 2rem rgba(229, 225, 187, 0.5);
 }
 .side.side:nth-of-type(2) {
   padding: 2rem;
   border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05),
+    inset 0 -0.57rem 2rem rgba(229, 225, 187, 0.5);
   text-align: right;
 }
+.envelope {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.envelope.front {
+  width: 10rem;
+  height: 6rem;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+  z-index: 9999;
+  opacity: 0;
+}
+.envelope.front::before,
+.envelope.front::after {
+  position: absolute;
+  display: block;
+  width: 12rem;
+  height: 6rem;
+  background-color: #e9dc9d;
+  transform: rotate(30deg);
+  transform-origin: 0 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  content: "";
+}
+.envelope.front::after {
+  right: 0;
+  transform: rotate(-30deg);
+  transform-origin: 100% 0;
+}
+.envelope.back {
+  top: -4rem;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  z-index: -9998;
+  opacity: 0;
+  transform: translateY(-6rem);
+}
+.envelope.back::before {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background-color: #e9dc9d;
+  border-radius: 1rem;
+  content: "";
+  transform: scaleY(0.6) rotate(45deg);
+}
+.result-message {
+  opacity: 0;
+  transition: all 0.3s 2s;
+  transform: translateY(9rem);
+  z-index: -9999;
+}
+.sent button {
+  background-color: rgba(78, 94, 114, 0.2);
+}
+.sent .result-message {
+  opacity: 1;
+  transform: translateY(12rem);
+}
+.sent small {
+  opacity: 0;
+}
 .centered {
+  /* position: absolute;
+  left: 0;
+  right: 0; */
   margin: 1rem auto;
+}
+.aLink:hover .spanL {
+  transition: transform 0s linear 0.1s, text-shadow 0s linear 0.1s;
+  transform: scale(-1, 1);
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
 }
 .socialGrid {
   display: grid;
@@ -179,7 +257,4 @@ p > textarea:focus {
   color: white !important;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
-}
-.socDiv > * {
-  pointer-events: none !important;
 }

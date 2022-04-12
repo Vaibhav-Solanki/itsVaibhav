@@ -11,7 +11,9 @@ function Intro() {
           <br />
           <RubFont st="Web Developer"></RubFont>
         </h1>
-        <span className="wave">👋</span>
+        {/* <span className="wave" style={{ fontFamily: "winMoji" }}>
+          👋
+        </span> */}
       </div>
       <br />
       <br />
