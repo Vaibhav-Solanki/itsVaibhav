@@ -12,13 +12,11 @@
     "url": "git+https://github.com/Vaibhav-Solanki/itsVaibhav.git"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-github-calendar": "^3.3.1",
     "react-icons": "^4.3.1",
-    "react-vertical-timeline-component": "^3.5.2",
-    "sass": "^1.49.9"
+    "react-vertical-timeline-component": "^3.5.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
