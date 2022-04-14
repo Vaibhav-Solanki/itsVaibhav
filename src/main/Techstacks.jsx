@@ -27,7 +27,11 @@ export const Techstacks = () => {
   }
   return (
     <>
-      <div className="d-flex align-items-center flex-column" id="stack">
+      <div
+        className="d-flex align-items-center flex-column"
+        id="stack"
+        data-aos="fade-right"
+      >
         <h2 className="titleH2Tag">Skills 🏅</h2>
         <div className="stackGrid">
           <div

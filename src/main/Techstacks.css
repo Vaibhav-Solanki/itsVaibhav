@@ -1,5 +1,5 @@
 .stackGrid {
-  /* max-width: 685px; */
+  max-width: 685px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -84,21 +84,21 @@
   .stackGrid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* max-width: 450px; */
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 576px) {
   .stackGrid {
-    /* max-width: 340px; */
+    max-width: 340px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
 }
-@media screen and (min-width: 991px) {
+/* @media screen and (min-width: 991px) {
   .stackGrid > div {
-    /* max-width: 340px; */
+    max-width: 340px;
     height: 130px;
     width: 130px;
     font-size: 75px;
   }
-}
+} */

@@ -1,5 +1,5 @@
 import Githubcalendar from "react-github-calendar";
-import "./github.css";
+// import "./github.css";
 // import { ThemeContext } from "../../Context/theme";
 
 export const Github = () => {
@@ -16,7 +16,7 @@ export const Github = () => {
   const themename = "dark";
   return (
     <>
-      <div id="github" className="container p-3 my-3">
+      <div id="github" className="container p-3 my-3" data-aos="fade-right">
         <h2 className="titleH2Tag">DAYS I CODE 🧑‍💻</h2>
         <Githubcalendar
           username="Vaibhav-Solanki"

@@ -1,10 +1,3 @@
-import "./project.scss";
-import {
-  FaRegCalendarAlt,
-  FaNodeJs,
-  FaJsSquare,
-  FaDatabase,
-} from "react-icons/fa";
 let list = [
   {
     Img: "https://ik.imagekit.io/itsVaibhav/croma",
@@ -27,86 +20,162 @@ let list = [
     Blog: "#",
   },
 ];
-function ProjectCard({ list }) {
-  let color = ["red", "green", "blue", "yellow"];
-  let i = 0;
-  return list.map(({ Img, time, title, detail, git, link, Blog }, key) => {
-    if (i > 3) i = 0;
-    return (
-      <article
-        className={`postcard light-mod ${color[i]}`}
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        key={key}
-      >
-        <a
-          className="postcard__img_link"
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img className="postcard__img" src={Img} alt="Title" width="200px" />
-        </a>
-        <div className="postcard__text t-dark">
-          <h1 className={`postcard__title ${color[i++]}`}>{title}</h1>
-          <div className="postcard__subtitle small">
-            <time dateTime="2020-05-25 12:00:00">
-              <FaRegCalendarAlt />
-              {time}
-            </time>
-          </div>
-          <div className="postcard__bar" />
-          <div className="postcard__preview-txt">{detail}</div>
-          <ul className="postcard__tagbox">
-            <li className="tag__item">
-              <FaNodeJs /> nodeJs
-            </li>
-            <li className="tag__item">
-              <FaJsSquare /> Javascript
-            </li>
-            <li className="tag__item">
-              <FaDatabase /> mongoDB
-            </li>
-          </ul>
-          <div className="btn-group" role="group" aria-label="Basic example">
-            {/* <button
-              type="button"
-              className="btn btn-outline-secondary"
-              onClick={() => window.open(Blog, "_blank")}
-            >
-              Blog
-            </button> */}
-            <button
-              type="button"
-              className="btn btn-outline-secondary"
-              onClick={() => window.open(git, "_blank")}
-            >
-              Github
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-secondary"
-              onClick={() => window.open(link, "_blank")}
-            >
-              Link
-            </button>
-          </div>
-        </div>
-      </article>
-    );
-  });
-}
-function project() {
+import React from "react";
+import "./Projects.css";
+import { FaReact } from "react-icons/fa";
+import { SiHtml5, SiExpress, SiMongodb, SiNodedotjs } from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
+export const Projects = () => {
   return (
-    <div>
-      <section className="light-mod" id="project">
-        <div className="container py-2">
-          <h2 className="titleH2Tag"> My PROJECTS 🛠️</h2>
-          <ProjectCard list={list}></ProjectCard>
+    <>
+      <div className="section" id="project">
+        <h2 className="titleH2Tag" data-aos="fade-right">
+          Projects 🏅
+        </h2>
+        <div className="projects_container">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img
+                  src="https://ik.imagekit.io/itsVaibhav/acko.png"
+                  alt="Acko"
+                />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2>Acko Insurance</h2>
+              <p>
+                used otp auth and paytm payment gatway, First Backend Project
+                with NodeJS, ExpressJS and MongoDB. Used EJS to render views.
+                Main functionalities were : Register/Login using JWT, Sorting
+                and Filtering in the backend, Cart and Wish List and many more.
+              </p>
+              <div>
+                <FaReact />
+                <SiHtml5 />
+                <IoLogoJavascript />
+                <SiNodedotjs />
+                <SiExpress />
+                <SiMongodb />
+              </div>
+              <div>
+                <a
+                  href="https://acko-three.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    See this Live
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/pankajbisht03/Acko-Frontend/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline">
+                    View Code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-    </div>
+        <div className="projects_container">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img
+                  src="https://ik.imagekit.io/itsVaibhav/plum_TH9xItBT_.png"
+                  alt="plumgoodness-clone"
+                />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2>plumgoodness-clone</h2>
+              <p>
+                Project with vanila js ,build using html css my first project on
+                web dev
+              </p>
+              <div>
+                <IoLogoJavascript />
+                <FaReact />
+                <SiNodedotjs />
+                <SiExpress />
+                <SiMongodb />
+              </div>
+              <div>
+                <a
+                  href="https://plumgoodness-clone-rohit-2021.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    See this Live
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Abhishekkp42/E-commerce-Plumgoodness"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline">
+                    View Code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projects_container">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img
+                  src="https://ik.imagekit.io/itsVaibhav/Screenshot_2022-04-14_124052_DjcOD3STNo.png"
+                  alt="croma"
+                />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2>Croma / NodeJs </h2>
+              <p>
+                First Backend Project with NodeJS, ExpressJS and MongoDB. Used
+                EJS to render views. Main functionalities were : Register/Login
+                using JWT
+              </p>
+              <div>
+                <SiNodedotjs />
+                <SiExpress />
+                <SiMongodb />
+              </div>
+              <div>
+                <a
+                  href="https://cromaexpress.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    URL for the API
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Vaibhav-Solanki/cromaExpress"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span type="button" className="btn btn--outline">
+                    View Code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
-export default project;
+export default Projects;

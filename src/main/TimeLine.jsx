@@ -25,8 +25,8 @@ export const Timeline = () => {
   return (
     <>
       <div className="section mainsection">
-        <h2 className="section__title" data-aos="fade-right">
-          My <span className="different">Timeline 💫</span>
+        <h2 className="titleH2Tag" data-aos="fade-right">
+          My Timeline 🏅
         </h2>
         <VerticalTimeline lineColor={linecolor}>
           <VerticalTimelineElement
@@ -63,7 +63,7 @@ export const Timeline = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={"2014 - 2017"}
+            date={"2019-2022"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               backgroundColor: `var(--clr-bg)`,
@@ -81,19 +81,19 @@ export const Timeline = () => {
               className="vertical-timeline-element-title"
               data-aos="fade-right"
             >
-              Bachelor of Science, Zoology Honors
+              DIPLOMA-CSE
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               data-aos="fade-right"
             ></h4>
             <p data-aos="fade-right">
-              North Bengal St. Xavier's College, Rajganj
+              Rajiv Gandhi Proudyogiki Vishwavidyalaya,Bhopal
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={"March 2014"}
+            date={"March 2018"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               backgroundColor: `var(--clr-bg)`,
@@ -117,9 +117,7 @@ export const Timeline = () => {
               className="vertical-timeline-element-subtitle"
               data-aos="fade-right"
             ></h4>
-            <p data-aos="fade-right">
-              Jalpaiguri Zilla School, Jalpaiguri, West Bengal
-            </p>
+            <p data-aos="fade-right">Jawahar Navodaya Vidyalaya Ujjian</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             icon={<FaStar />}

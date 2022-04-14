@@ -13,9 +13,15 @@ body {
 }
 .titleH2Tag {
   text-align: center;
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-family: "Poppins", Arial, sans-serif;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+  text-transform: uppercase !important;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 @font-face {

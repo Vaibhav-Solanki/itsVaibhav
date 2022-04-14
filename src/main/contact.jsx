@@ -45,7 +45,7 @@ function Contact() {
     }
   };
   return (
-    <div className="row" id="contact">
+    <div className="row" id="contact" data-aos="fade-right">
       <h2 className="titleH2Tag">Get in touch 🤝</h2>
       <div className="col" id="colP">
         <div className="socialGrid">

@@ -12,6 +12,7 @@
     "url": "git+https://github.com/Vaibhav-Solanki/itsVaibhav.git"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-github-calendar": "^3.3.1",
