@@ -22,7 +22,7 @@ function About() {
           {" "}
           <a
             className="btn btn-outline-dark"
-            href="https://drive.google.com/file/d/1-ubvRj-uO-5hVvaoHnOwFr1vpD7bPphi/view?usp=sharing"
+            href="https://drive.google.com/file/d/14qBAOT8W6uisNr6ApQr2gLAY9BOA6aG_/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             width="400px"
