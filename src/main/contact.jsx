@@ -102,7 +102,7 @@ function Contact() {
             onMouseLeave={handleExit}
             id="twitter"
             onClick={() =>
-              window.open("https://twitter.com/VaibhavSolankies", "_blank")
+              window.open("https://twitter.com/incoSolanki", "_blank")
             }
           >
             <FaTwitter />
