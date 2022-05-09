@@ -49,7 +49,7 @@ function Header() {
               </span>
             </a>
             <a
-              href="https://twitter.com/VaibhavSolankie"
+              href="https://twitter.com/incoSolanki"
               target="_blank"
               rel="noreferrer"
               className="d-flex align-items-center justify-content-center"
