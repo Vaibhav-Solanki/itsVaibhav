@@ -1,34 +1,18 @@
-import { useState, useEffect } from "react";
-import "./Timeline.css";
+import "./TimeLine.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaStar, FaGraduationCap } from "react-icons/fa";
-// import { ThemeContext } from "../../Context/theme";
-
 export const Timeline = () => {
-  // const [{ themename }] = React.useContext(ThemeContext);
-  const [linecolor, setlinecolor] = useState("#23283e");
-  // themename === "light" ? "#23283e" : "#fcfcfc"
-
-  useEffect(() => {
-    // if (themename === "dark") {
-    if (false) {
-      setlinecolor("#fcfcfc");
-    } else {
-      setlinecolor("#23283e");
-    }
-  }, []);
-  // }, [themename]);
   return (
     <>
       <div className="section mainsection">
         <h2 className="titleH2Tag" data-aos="fade-right">
           My Timeline 🏅
         </h2>
-        <VerticalTimeline lineColor={linecolor}>
+        <VerticalTimeline lineColor={"#23283e"}>
           <VerticalTimelineElement
             date={"October 2021 - April 2022 - "}
             contentStyle={{
