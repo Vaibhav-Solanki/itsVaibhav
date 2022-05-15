@@ -30,7 +30,7 @@ function Contact() {
   };
   const postMes = async () => {
     try {
-      const response = await fetch("https://backform.herokuapp.com/", {
+      const response = await fetch("https://noman.co.in/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
