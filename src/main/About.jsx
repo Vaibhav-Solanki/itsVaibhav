@@ -32,13 +32,6 @@ function About() {
         </p>
       </div>
       <div className="col col-sm-4 d-flex align-items-center">
-        <img
-          src="https://ik.imagekit.io/itsVaibhav/hero"
-          alt="Profile"
-          className="w-100 p-2 mb-2"
-          width="300px"
-          style={{ borderRadius: "20px" }}
-        />
       </div>
     </div>
   );
